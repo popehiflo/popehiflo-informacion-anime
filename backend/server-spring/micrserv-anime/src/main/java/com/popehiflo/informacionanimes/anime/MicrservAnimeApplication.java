@@ -1,4 +1,4 @@
-package com.popehiflo.informacionanimes.micrservanime;
+package com.popehiflo.informacionanimes.anime;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
