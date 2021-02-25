@@ -16,9 +16,14 @@ Inicio/Cierre de Sesión (posiblemente)
 ### Backend Java - *Microservices*:
 * [MySQL 8](https://dev.mysql.com/downloads/mysql/) - Mi RDBMS preferido
 * [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) - Java SE Development Kit 11
-* [Spring](https://spring.io/) - El framework web usado   
-    `Spring Boot - Spring Data JPA Repositories   
-    Spring Data REST`
+* [Spring](https://spring.io/) - El framework web usado  
+* [Spring Boot](https://spring.io/projects/spring-boot)  
+    `Dependencias Iniciales`
+    * Lombok  
+    * MySQL Driver
+    * Spring Boot DevTools
+    * Spring Data JPA   
+    * Spring Web
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 
 ## Codigo Fuente 📁
