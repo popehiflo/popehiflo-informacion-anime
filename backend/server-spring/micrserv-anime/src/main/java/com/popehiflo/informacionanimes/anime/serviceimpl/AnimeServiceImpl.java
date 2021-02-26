@@ -3,6 +3,7 @@
  */
 package com.popehiflo.informacionanimes.anime.serviceimpl;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -36,5 +37,27 @@ public class AnimeServiceImpl implements AnimeService {
 										animeRespository.findAll().spliterator(), false)
 										.collect(Collectors.toList());
 		return animesDataSource;
-	} 
+	}
+
+	@Override
+	public Anime guardarAnime(Anime anime) {
+		// Asignar fecha de creacion
+		anime.setFechaCreacion(LocalDateTime.now());
+		
+		return animeRespository.save(anime);
+	}
+
+	@Override
+	public Anime actualizarAnime(Anime anime) {
+		// TODO Auto-generated method stub
+		return animeRespository.save(anime);
+	}
+
+	@Override
+	public void eliminarAnime(Integer id) {
+		// TODO Auto-generated method stub
+		animeRespository.deleteById(id);
+	}
+	
+	
 }
