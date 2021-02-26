@@ -20,4 +20,25 @@ public interface AnimeService {
 	 * @return listado de animes
 	 */
 	List<Anime> consultarAnimes();
+	
+	/**
+	 * Metodo que permite guardar un anime
+	 * @param anime {@link Anime} objeto anime a guardar
+	 * @return anime guardado
+	 */
+	Anime guardarAnime(Anime anime);
+	
+	/**
+	 * Metodo que permite actualizar un anime.
+	 * @param anime {@link Anime} objeto anime a actualizar.
+	 * @return anime actualizado.
+	 */
+	Anime actualizarAnime(Anime anime);
+	
+	/**
+	 * Metodo que permite eliminar un anime.
+	 * @param id {@link Integer} objeto anime a eliminar.
+	 * @return anime eliminado.
+	 */
+	void eliminarAnime(Integer id);
 }
