@@ -2,7 +2,7 @@
  * Entidad que mapea la informacion
  * obtenida del microservicio Anime
  */
-export class Country {
+export class Anime {
 
   /**
    * Identificador del anime
