@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,7 @@ import com.popehiflo.informacionanimes.anime.service.AnimeService;
  * @version 1.0
  * Controlador que manipula el flujo de los servicios rest del microservicio de anime
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/anime")
 public class AnimeController {
